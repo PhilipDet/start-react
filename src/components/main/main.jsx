@@ -23,31 +23,8 @@ export const Main = () => {
         console.log("Button Click at: " + hour + ":" + minute + ":" + second);
     };
 
-    const buttonThemes = {
-        light: {
-            bgColor: "#f4f4f4",
-            color: "#333",
-            hover: "#333",
-            hoverColor: "#f4f4f4",
-        },
-        dark: {
-            bgColor: "#333",
-            color: "#f4f4f4",
-            hover: "#f4f4f4",
-            hoverColor: "#333",
-        },
-        purple: {
-            bgColor: "#cb28cb",
-            color: "#fff",
-            hover: "#9f509f",
-            hoverColor: "#fff",
-        },
-        blue: {
-            bgColor: "#2828cb",
-            color: "#fff",
-            hover: "#5454a5",
-            hoverColor: "#fff",
-        },
+    const helloWorld = () => {
+        console.log("Hello, World!");
     };
 
     return (
@@ -75,11 +52,18 @@ export const Main = () => {
                 <Button
                     action={eventClick}
                     size="medium"
-                    theme={buttonThemes.blue}
+                    theme="blue"
                     text="Klik Her!"
                 />
 
-                <Button />
+                <Button
+                    action={helloWorld}
+                    size="large"
+                    theme="purple"
+                    text="Hello, World!"
+                />
+
+                <Button text="Button without props" />
             </MainStyled>
         </>
     );
