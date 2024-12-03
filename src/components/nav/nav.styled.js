@@ -4,7 +4,7 @@ export const NavStyled = styled.nav`
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: ${(props) => props.backgroundColor}; // #2e9fe4
+    background-color: ${(props) => props.bgcolor}; // #2e9fe4
 
     ul {
         max-width: 1200px;

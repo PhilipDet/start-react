@@ -4,7 +4,7 @@ import { ThemeBTN } from "./theme";
 
 export const Navigation = () => {
     return (
-        <NavStyled color="#fff" backgroundColor="#cb2828">
+        <NavStyled bgcolor="#cb2828" color="#fff">
             <ul>
                 <li>
                     <a href="#">Home</a>
